@@ -104,7 +104,7 @@ test {
     useJUnit()
     finalizedBy jacocoTestReport
     include "**/*Test.class"
-    systemProperties 'java.security.policy': file("$projectDir/plugin-security.policy").absolutePath
+    systemProperties 'java.security.policy': file("$projectDir/test-plugin-security.policy").absolutePath
 }
 
 jacoco {
